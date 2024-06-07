@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakaian Wanita - Butik Vingky</title>
+    <link rel="stylesheet" href="./style-pakaianwanita.css">
+</head>
+<body>
+    <header>
+        <h1>Pilihan pakaian wanita </h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </header>
+
+    <a href="belanja.html" class="back-button">&#9665; Kembali</a>
+
+    <main>
+        <section class="product-grid">
+            <!-- First set of 5 products -->
+            <div class="product-item">
+                <img src="Image/muslimah.jpeg" alt="Stylish Women's Apparel 1">
+                <div class="details-container">
+                    <h2>Dress syar i wanita</h2>
+                    <p>Dress syar'i panjang dengan bahan dingin dan lembut serta memiliki banyak warna indah</p>
+                    <p>Price: Rp.200.000.</p>
+                    <button class="buy-button">Add to Cart</button>
+                    <button class="buy-now-button">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="Image/rokwanitapjg.jpeg" alt="Stylish Women's Apparel 2">
+                <div class="details-container">
+                    <h2>Rok wanita panjang</h2>
+                    <p>Rok panjang berkain span yang tidak nerawang serta nyaman di pakai</p>
+                    <p>Price:Rp.90.000.</p>
+                    <button class="buy-button">Add to Cart</button>
+                    <button class="buy-now-button">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="Image/blazer.jpeg" alt="Stylish Women's Apparel 3">
+                <div class="details-container">
+                    <h2>Blazer for Women</h2>
+                    <p>Blazer dengan banyak warna serta kesan elegan</p>
+                    <p>Price:Rp.70.000.</p>
+                    <button class="buy-button">Add to Cart</button>
+                    <button class="buy-now-button">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="Image/cardigan.webp" alt="Stylish Women's Apparel 4">
+                <div class="details-container">
+                    <h2>Cardigan lembut dan cantik serta warna yang bergam</h2>
+                    <p>Description for Cardigan.</p>
+                    <p>Price: Rp.50.000</p>
+                    <button class="buy-button">Add to Cart</button>
+                    <button class="buy-now-button">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="Image/blouse.jpeg" alt="Stylish Women's Apparel 5">
+                <div class="details-container">
+                    <h2>Blouse biru</h2>
+                    <p>Baju blouse kali ini memiliki model yang simpel namu menawan dan indah dipakai</p>
+                    <p>Price: Rp.120.000</p>
+                    <button class="buy-button">Add to Cart</button>
+                    <button class="buy-now-button">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <!-- Second set of 5 products -->
+            <div class="product-item">
+                <img src="Image/muslimah2.jpg" alt="Stylish Women's Apparel 6">
+                <div class="details-container">
+                    <h2>Dress muslimah</h2>
+                    <p>Description for Product 6.</p>
+                    <p>Price: Rp.200.000</p>
+                    <button class="buy-button">Add to Cart</button>
+                    <button class="buy-now-button">Beli Sekarang</button>
+                </div>
+            </div>
+            
+            <!-- Add the rest of the second set of products -->
+
+            <!-- Add more product items as needed -->
+        </section>
+        <div class="notification-box" id="notification">
+            <p>Item added to cart!</p>
+        </div>
+<script>
+        function showNotification(message) {
+            var notification = document.getElementById("notification");
+            notification.innerHTML = "<p>" + message + "</p>";
+            notification.style.display = "block";
+            setTimeout(function () {
+                notification.style.display = "none";
+            }, 2000);
+        }
+
+        function addToCart() {
+            showNotification("Item added to cart!");
+            // Add additional logic for adding to the cart
+        }
+
+        function redirectToOrderForm() {
+            // Ganti URL dengan URL formulir pemesanan yang sesuai
+            window.location.href = "order-form.html";
+        }
+
+        // Tambahkan event listener untuk setiap tombol "Add to Cart"
+        var addToCartButtons = document.querySelectorAll('.buy-button');
+        addToCartButtons.forEach(function(button) {
+            button.addEventListener('click', addToCart);
+        });
+
+        // Tambahkan event listener untuk setiap tombol "Beli Sekarang"
+        var buyNowButtons = document.querySelectorAll('.buy-now-button');
+        buyNowButtons.forEach(function(button) {
+            button.addEventListener('click', redirectToOrderForm);
+        });
+    </script>
+        
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Butik Vingky. All rights reserved.</p>
+    </footer>
+</body>
+</html>

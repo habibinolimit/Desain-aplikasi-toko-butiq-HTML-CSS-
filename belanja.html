@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belanja di Toko Butik Vingky</title>
+    <link rel="stylesheet" href="./style-belanja.css">
+    <!-- Add any additional styles or scripts specific to your shopping page -->
+</head>
+<body>
+    <header>
+        <h1>Selamat datang di Toko Butik Vingky</h1>
+    </header>
+
+    <main>
+        <p>Temukan berbagai pilihan produk berkualitas tinggi di toko kami. Silakan jelajahi kategori-kategori menarik di bawah ini:</p>
+
+        <!-- Product options box -->
+        <div class="product-options-box">
+            <div class="product-option">
+                <img src="Image/baju.jpg" alt="Pakaian wanita">
+                <p>Pakaian Wanita</p>
+                <div class="button-container">
+                    <button class="details-button" onclick="redirectToPakaianWanita()">Pilih</button>
+                </div>
+            </div>
+
+            <div class="product-option">
+                <img src="Image/dress.jpg" alt="Dress/Gaun Wanita">
+                <p>Dress/Gaun Wanita</p>
+                <div class="button-container">
+                    <button class="details-button" onclick="redirectToDressGaunWanita()">Pilih</button>
+                </div>
+            </div>
+
+            <div class="product-option">
+                <img src="Image/aksesoris.jpg" alt="Aksesoris Wanita">
+                <p>Aksesoris Wanita</p>
+                <div class="button-container">
+                    <button class="details-button" onclick="redirectToAksesorisWanita()">Pilih</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Toko Butik Vingky. All rights reserved.</p>
+    </footer>
+
+    <button class="back-button" onclick="redirectToIndex()">Kembali ke Index</button>
+
+    <script>
+        function redirectToPakaianWanita() {
+            window.location.href = 'pakaian_wanita.html';
+        }
+
+        function redirectToIndex() {
+            window.location.href = 'index.html';
+        }
+
+        function redirectToAksesorisWanita() {
+            window.location.href = 'aksesoriswanita.html';
+        }
+
+        function redirectToDressGaunWanita(){
+            window.location.href = 'dress.html';
+        }
+    </script>
+</body>
+</html>

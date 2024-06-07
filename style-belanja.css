@@ -1,0 +1,90 @@
+/* style-belanja.css */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #96EFFF;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-options-box {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.product-option {
+    flex: 1; /* Distribute available space equally among items */
+    margin: 10px; /* Add some margin between items */
+    text-align: center;
+}
+
+.product-option img {
+    border: 2px solid #2c3e50;
+    max-width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons horizontally */
+}
+
+.details-button, .back-button {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.product-option p {
+    color: #333;
+    text-align: center;
+}
+
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* style-belanja.css */
+
+/* ... (existing styles) ... */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons horizontally */
+    margin-top: 10px; /* Add margin to separate from the image */
+}
+
+.back-button {
+    background-color: #771313;
+    color: #ecf0f1;
+    border: none;
+    padding: 15px 50px; /* Sesuaikan ukuran padding sesuai kebutuhan */
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px; /* Pindahkan tombol ke bawah sedikit */
+}

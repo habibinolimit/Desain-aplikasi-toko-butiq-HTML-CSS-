@@ -1,0 +1,133 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  #96EFFF;
+    box-sizing: border-box;
+    height: 3000px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color:rgba(197, 255, 248, 0.87); 
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;   
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav a {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0 1.4rem;
+    color: #4682A9;
+    text-decoration: none;
+}
+
+.navbar .navbar-logo span{
+    color: #4682A9;
+}
+
+
+.herocon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Image/Butik.jpg);
+    text-align: center;
+}
+
+.hero{
+    display: block;
+    height: 100vh;
+    padding: 19px;
+}
+
+.hero h1{
+    padding-top: 250px;
+    color: white;
+    font-size: 4rem;
+}
+
+.hero p{
+    color: #96EFFF;
+    padding-bottom: 10px;
+    max-width: 50rem;
+}
+
+.hero button{
+    background-color: #96EFFF;
+    border: none;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 30px;
+}
+
+#produk{
+    padding-top: 6rem;
+}
+
+.product{
+    text-align: center;
+}
+
+.product h2{
+    display: inline-block;
+    font-size: 2.5rem;
+}
+
+.product .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.product .row .product-card {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.product .row .product-card img{
+    width: 80%;
+}
+
+.product .row .menu-card .menu-card-tittle{
+    margin: 1rem auto 0.5rem;
+}
+
+#about,
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contact,
+.About{
+    margin-top: 1rem;
+    text-align: center;
+    padding: 7rem 7% 1.4rem;
+    max-width: 60rem;
+}
+
+.Contact h2,
+.About h2{
+    font-size: 2.5rem;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakaian Wanita - Butik Vingky</title>
+    <link rel="stylesheet" href="./style-pakaianwanita.css">
+</head>
+<body>
+    <header>
+        <h1>Pilihan pakaian wanita </h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-grid">
+            <!-- First set of 5 products -->
+            <div class="product-item">
+                <img src="Image/muslimah.jpeg" alt="Stylish Women's Apparel 1">
+                <div class="details-container">
+                    <h2>Dress syar i wanita</h2>
+                    <p>Dress syar'i panjang dengan bahan dingin dan lembut serta memiliki banyak warna indah</p>
+                    <p>Price: Rp.200.000.</p>
+                    <button class="buy-button">Add to Cart</button>
+                    <button class="buy-now-button" onclick="redirectToOrderForm()">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <!-- Add the rest of your product items -->
+
+            <!-- Second set of 5 products -->
+            <div class="product-item">
+                <img src="Image/muslimah2.jpg" alt="Stylish Women's Apparel 6">
+                <div class="details-container">
+                    <h2>Dress muslimah</h2>
+                    <p>Description for Product 6.</p>
+                    <p>Price: $XX.XX</p>
+                    <button class="buy-button">Add to Cart</button>
+                    <button class="buy-now-button" onclick="redirectToOrderForm()">Beli Sekarang</button>
+                </div>
+            </div>
+            
+            <!-- Add the rest of the second set of products -->
+
+            <!-- Add more product items as needed -->
+        </section>
+        <div class="notification-box" id="notification">
+            <p>Item added to cart!</p>
+        </div>
+
+        <script>
+            function showNotification() {
+                var notification = document.getElementById("notification");
+                notification.style.display = "block";
+                setTimeout(function () {
+                    notification.style.display = "none";
+                }, 2000);
+            }
+
+            function redirectToOrderForm() {
+                // Change 'order.html' to the actual URL of your order form page
+                window.location.href = 'order.html';
+            }
+
+            // Add an event listener for each "Add to Cart" button
+            var addToCartButtons = document.querySelectorAll('.buy-button');
+            addToCartButtons.forEach(function(button) {
+                button.addEventListener('click', showNotification);
+            });
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Butik Vingky. All rights reserved.</p>
+    </footer>
+</body>
+</html>
